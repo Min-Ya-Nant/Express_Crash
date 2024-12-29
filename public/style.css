@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Navigation Menu */
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  padding: 9px 19px;
+}
+
+nav .nav-link {
+  color: #008cba;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav .nav-link:hover {
+  color: #f39c12;
+}
+
+/* Buttons */
+.btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 7px;
+}
+
+.add-btn {
+  background-color: #008cba;
+}
+
+.sort-btn {
+  background-color: #f39c12;
+}
+
+.home-btn {
+  background-color: #e74c3c;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+button.btn.update-btn {
+  margin-left: 20px;
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Post List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 3px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Post list container */
+#post-list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post-title {
+  cursor: pointer; /* Pointer cursor for better UX */
+}
+
+/* Buttons container */
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* Individual button styles */
+.update-btn {
+  background-color: #4caf50; /* Green for Update */
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red for Delete */
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Button Colors */
+.add-btn {
+  background-color: #008cba; /* Blue for Add */
+}
+
+.update-btn {
+  background-color: #4caf50; /* Green for update */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red for delete */
+  color: white;
+}
+
+.sort-btn {
+  background-color: #f39c12; /* Orange for Sort */
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Buttons are spaced apart */
+button,
+.btn {
+  margin-right: 10px;
+}

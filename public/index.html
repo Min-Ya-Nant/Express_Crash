@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express CRUD App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Post Management</h1>
+
+      <form id="post-form">
+        <input type="text" id="title" placeholder="Enter post title" required />
+        <!-- Add Post Button -->
+        <button type="submit" class="btn add-btn">Add Post</button>
+        <!-- Sort Posts Button -->
+        <button id="sort-button" class="btn sort-btn">Sort Posts</button>
+      </form>
+
+      <!-- Update and Delete Buttons (assuming you display them for each post) -->
+      <ul id="post-list">
+        <!-- Example Post -->
+        <li>
+          <span class="post-title">Post Title</span>
+          <div class="button-group" style="display: none;">
+            <button class="btn update-btn">Update</button>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
